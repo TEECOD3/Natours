@@ -8,6 +8,7 @@
   margin-inline: auto;
   font-size: $default-font-size;
   transform: skewX(-12deg);
+  cursor: pointer;
 
   & > * {
     transform: skewX(12deg);

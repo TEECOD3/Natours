@@ -10,8 +10,20 @@
   transform: skewX(-12deg);
   cursor: pointer;
 
+  @include respond(tab-port) {
+    width: 100%;
+    padding: 4rem;
+  }
+
+  @include respond(tab-port) {
+    transform: skewX(0);
+  }
+
   & > * {
     transform: skewX(12deg);
+    @include respond(tab-port) {
+      transform: skewX(0);
+    }
   }
 
   &__shape {

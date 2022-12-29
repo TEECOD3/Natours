@@ -15,6 +15,16 @@
     text-align: center;
     box-shadow: 0 1rem 2rem rgba($color-black, 0.5);
     cursor: pointer;
+
+    @include respond(tab-port) {
+      top: 4rem;
+      right: 4rem;
+    }
+
+    @include respond(phone) {
+      top: 3rem;
+      right: 3rem;
+    }
   }
 
   &__background {
@@ -31,7 +41,15 @@
     z-index: 30;
 
     transition: transform 0.8s ease;
-    // transform: scale(50);
+    @include respond(tab-port) {
+      top: 4.5rem;
+      right: 4.5rem;
+    }
+
+    @include respond(phone) {
+      top: 3rem;
+      right: 3rem;
+    }
   }
 
   &__nav {
@@ -54,6 +72,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    font-size: 1rem;
   }
   &__item {
     margin: 1rem;
@@ -62,8 +81,8 @@
   &__link {
     &:link,
     &:visited {
-      font-size: 3rem;
-      font-weight: 200;
+      font-size: 2rem;
+      font-weight: 400;
       text-decoration: none;
       text-transform: uppercase;
       padding: 1rem 2rem;

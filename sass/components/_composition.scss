@@ -9,18 +9,35 @@
     z-index: 10;
     transition: all 0.2s;
     outline-offset: 1.5rem;
+    @include respond(tab-port) {
+      float: left;
+      position: relative;
+      width: 33.3333%;
+    }
 
     &--p1 {
       left: 0;
       top: -2rem;
+
+      @include respond(tab-port) {
+        top: 0;
+      }
     }
     &--p2 {
       right: 0;
       top: 2rem;
+      @include respond(tab-port) {
+        top: 0;
+      }
     }
     &--p3 {
       left: 20%;
       top: 10rem;
+
+      @include respond(tab-port) {
+        top: 0;
+        left: 0;
+      }
     }
     &:hover {
       transform: scale(1.05) translateY(0.5rem);
